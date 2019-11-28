@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title', 'Member List')
+@section('title', 'Member Edit')
 
 
 @section('content')

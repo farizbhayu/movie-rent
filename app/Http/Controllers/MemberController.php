@@ -94,12 +94,13 @@ class MemberController extends Controller
             'phone_number' => 'required'
         ]);
 
-        DB::table('members')->where('id_member', $request->$ud)->update([
-            'name' => $request->movie_title,
+        DB::table('members')->where('id_member', $request->id)->update([
+            'name' => $request->name,
             'address' => $request->address,
             'phone_number' => $request->phone_number
         ]);
 
+        alert()->success('Data Successfully Updated', 'Congratulations')->persistent('Close');        
         return redirect('/member');
     }
 

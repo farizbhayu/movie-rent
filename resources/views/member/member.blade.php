@@ -11,6 +11,7 @@ border-radius: 5px;">Add Member</a>
 <table id="example" class="table table-striped table-bordered" style="width:100%">
 <thead>
     <tr>
+        <th>ID Member. </th>
         <th>Name</th>
         <th>Address</th>
         <th>Phone Number</th>
@@ -19,6 +20,7 @@ border-radius: 5px;">Add Member</a>
 </thead>
     @foreach($member as $members)
     <tr>
+        <td>{{ $members->id_member }}.</td>
         <td>{{ $members->name }}</td>
         <td>{{ $members->address }}</td>
         <td>{{ $members->phone_number }}</td>

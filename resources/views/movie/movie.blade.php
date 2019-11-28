@@ -11,6 +11,7 @@ border-radius: 5px;">Add Movie</a>
 <table id="example" class="table table-striped table-bordered" style="width:100%">
 <thead>
     <tr>
+        <th>No. </th>
         <th>Movie Title</th>
         <th>Genre</th>
         <th>Release Year</th>
@@ -18,8 +19,10 @@ border-radius: 5px;">Add Movie</a>
         <th>Edit</th>
     </tr>
 </thead>
+    @php $no = 1; @endphp
     @foreach($movie as $movies)
     <tr>
+        <td>{{ $no++ }}.</td>
         <td>{{ $movies->movie_title }}</td>
         <td>{{ $movies->genre }}</td>
         <td>{{ $movies->years }}</td>

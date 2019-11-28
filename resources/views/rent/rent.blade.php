@@ -11,6 +11,7 @@ border-radius: 5px;">Add Tenant</a>
 <table id="example" class="table table-striped table-bordered" style="width:100%">
 <thead>
     <tr>
+        <th>ID Member </th>
         <th>Name of Member</th>
         <th>Movie Title</th>
         <th>Rental Date</th>
@@ -19,6 +20,7 @@ border-radius: 5px;">Add Tenant</a>
 </thead>
     @foreach($rent as $rents)
     <tr>
+        <td>{{ $rents->id_rent }}.</td>
         <td>{{ $rents->name }}</td>
         <td>{{ $rents->movie_title }}</td>
         <td>{{ $rents->rental_date }}</td>

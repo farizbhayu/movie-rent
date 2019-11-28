@@ -65,6 +65,7 @@ class MovieController extends Controller
             'status' => $request->status
         ]);
 
+        alert()->success('Data Successfully Updated', 'Congratulations')->persistent('Close');        
         return redirect('/movie');
     }
 
